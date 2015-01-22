@@ -17,8 +17,14 @@ The goal is to use object-oriented JavaScript to construct a widget.  Ideally
 you should be able to issue the command:
 
     MarkdownWidget("#source-id", "#preview-div")
+    
+Your goal in this challenge **is not** to write a Markdown parser (although that is certainly worth a stretch!) the goal is to produce an MVC architecture in a language _that has no inherent patterns on how to build one_!
 
 ## Releases
+
+### Release -1
+
+Your instructor may want you to try a simple implementation that _does not_ adhere to MVC principles.  It may be the instructors design built on the techniques you already know.  See if you should follow this path or if you should move directly to the MVC-based implementation.
 
 ### Release 0
 
