@@ -29,7 +29,17 @@ Your instructor may want you to try a simple implementation that _does not_ adhe
 ### Release 0
 
 Set up an object-oriented architecture (possibly [Model View Controller][MVC]
-or [Model View Presenter][MVP]). As a first step, we won't do any actual markdown parsing. Instead, your code should watch the `keyup` event on a `<textarea>` and push the user's text into a `<div>` as they type.
+or [Model View Presenter][MVP]). As a first step, we won't do any actual markdown parsing. Instead, your code should watch the `keyup` event on a `textarea`, and pass the user's input through a function that replaces the content of the `<div id="preview">` with the contents of the textarea as they type.
+
+We might call this "pass through function" a "transform function" because it will eventually transform the user's input into formatted HTML. For now this function shouldn't transform anything, we'll get to that part later:
+
+```
+function transform(input) {
+  return input;
+}
+```
+
+Later, we'll be implementing the actual transformation, but for now we're using it as a place holder to establish the flow of data through our UI and front-end code. A transform function that just passes data straight through is sometimes called an [identity transformation][identity] function.
 
 ### Release 1
 
@@ -53,6 +63,7 @@ later. Sometimes it's useful to confirm that the flow of information through you
 * [MVP][]
 * [markdown-js][]
 
+[identity]: http://en.wikipedia.org/wiki/Identity_transform
 [MVC]: http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller
 [MVP]: http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93presenter
 [markdown-js]: https://github.com/evilstreak/markdown-js
