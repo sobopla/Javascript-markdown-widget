@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+    normalize.css removes cross-browser differences in defaults, e.g.,
+    differences in how form elements appear between Firefox and IE
+    See: http://necolas.github.com/normalize.css/
+  -->
+<!--   <link rel="stylesheet" href="css/normalize.css"> -->
+  <!--
+    application.css is where you put your styles
+  -->
+<!--   <link rel="stylesheet" href="css/application.css"> -->
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<!--   <script src="js/mousetrap.js"></script> -->
+  <script src="js/underscore.js"></script>
+  <script src="js/markdown.js"></script>
+  <script src="js/application.js"></script>
+
+<!--   take off slash if not loading on heroku -->
+
+  <title>markdown</title>
+</head>
+<body>
+  <h1>Markdown</h1>
+
+  <div id="textarea">
+      <form action="post"> 
+          <h1>Markdown Preview</h1>
+  <textarea class="input-field" rows="20" cols="75" name="userinput" placeholder="enter text."> 
+  </textarea>
+      </form>
+  </div>
+
+  <div id="preview">
+  </div>
+
+</body>
+
+</html>
